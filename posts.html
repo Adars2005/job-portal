@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - Simple Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .nav .button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav .button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .post-item {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-item h3 {
+            margin: 0 0 10px;
+        }
+
+        .post-item p {
+            margin: 5px 0;
+        }
+
+        .post-item a {
+            color: #35424a;
+            text-decoration: none;
+        }
+
+        .post-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Posts</h1>
+        <nav class="nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="posts.html" class="button">Posts</a>
+            <a href="jobs.html" class="button">Jobs</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="private-internships.html" class="button">Private Internships</a>
+            <a href="government-internships.html" class="button">Government Internships</a>
+            <a href="login.html" class="button">Login</a>
+            <a href="signup.html" class="button">Sign Up</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Recent Posts</h2>
+            <div class="post-list">
+                <div class="post-item">
+                    <h3>Software Engineer Job Opportunity</h3>
+                    <p><strong>Company:</strong> Tech Solutions</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p><strong>Description:</strong> Develop and maintain web applications.</p>
+                    <p><strong>Link:</strong> <a href="https://www.techsolutions.com/jobs/software-engineer" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Data Scientist Internship</h3>
+                    <p><strong>Company:</strong> Data Insights</p>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p><strong>Description:</strong> Analyze and interpret complex data sets.</p>
+                    <p><strong>Link:</strong> <a href="https://www.datainsights.com/internships/data-scientist" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Product Manager Job Opportunity</h3>
+                    <p><strong>Company:</strong> Innovatech</p>
+                    <p><strong>Location:</strong> Austin, TX</p>
+                    <p><strong>Description:</strong> Lead product development teams.</p>
+                    <p><strong>Link:</strong> <a href="https://www.innovatech.com/jobs/product-manager" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>UX Designer Internship</h3>
+                    <p><strong>Company:</strong> Creative Minds</p>
+                    <p><strong>Location:</strong> Seattle, WA</p>
+                    <p><strong>Description:</strong> Design user-friendly interfaces.</p>
+                    <p><strong>Link:</strong> <a href="https://www.creativeminds.com/internships/ux-designer" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Marketing Specialist Job Opportunity</h3>
+                    <p><strong>Company:</strong> Market Leaders</p>
+                    <p><strong>Location:</strong> Chicago, IL</p>
+                    <p><strong>Description:</strong> Develop and execute marketing strategies.</p>
+                    <p><strong>Link:</strong> <a href="https://www.marketleaders.com/jobs/marketing-specialist" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Network Engineer Job Opportunity</h3>
+                    <p><strong>Company:</strong> NetSecure</p>
+                    <p><strong>Location:</strong> Denver, CO</p>
+                    <p><strong>Description:</strong> Manage and maintain network infrastructure.</p>
+                    <p><strong>Link:</strong> <a href="https://www.netsecure.com/jobs/network-engineer" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>HR Manager Job Opportunity</h3>
+                    <p><strong>Company:</strong> People First</p>
+                    <p><strong>Location:</strong> Miami, FL</p>
+                    <p><strong>Description:</strong> Oversee HR operations and policies.</p>
+                    <p><strong>Link:</strong> <a href="https://www.peoplefirst.com/jobs/hr-manager" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Financial Analyst Internship</h3>
+                    <p><strong>Company:</strong> FinCorp</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Description:</strong> Analyze financial data and trends.</p>
+                    <p><strong>Link:</strong> <a href="https://www.fincorp.com/internships/financial-analyst" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Operations Manager Job Opportunity</h3>
+                    <p><strong>Company:</strong> Global Logistics</p>
+                    <p><strong>Location:</strong> Los Angeles, CA</p>
+                    <p><strong>Description:</strong> Manage daily operations and logistics.</p>
+                    <p><strong>Link:</strong> <a href="https://www.globallogistics.com/jobs/operations-manager" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Content Writer Internship</h3>
+                    <p><strong>Company:</strong> WriteWell</p>
+                    <p><strong>Location:</strong> Portland, OR</p>
+                    <p><strong>Description:</strong> Create engaging content for various platforms.</p>
+                    <p><strong>Link:</strong> <a href="https://www.writewell.com/internships/content-writer" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Graphic Designer Job Opportunity</h3>
+                    <p><strong>Company:</strong> Design Studio</p>
+                    <p><strong>Location:</strong> Atlanta, GA</p>
+                    <p><strong>Description:</strong> Design visual content for marketing materials.</p>
+                    <p><strong>Link:</strong> <a href="https://www.designstudio.com/jobs/graphic-designer" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Customer Support Specialist Job Opportunity</h3>
+                    <p><strong>Company:</strong> HelpDesk</p>
+                    <p><strong>Location:</strong> Phoenix, AZ</p>
+                    <p><strong>Description:</strong> Provide customer support and assistance.</p>
+                    <p><strong>Link:</strong> <a href="https://www.helpdesk.com/jobs/customer-support-specialist" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>IT Support Technician Internship</h3>
+                    <p><strong>Company:</strong> TechSupport</p>
+                    <p><strong>Location:</strong> Dallas, TX</p>
+                    <p><strong>Description:</strong> Provide technical support and troubleshooting.</p>
+                    <p><strong>Link:</strong> <a href="https://www.techsupport.com/internships/it-support-technician" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Business Analyst Job Opportunity</h3>
+                    <p><strong>Company:</strong> BizSolutions</p>
+                    <p><strong>Location:</strong> San Diego, CA</p>
+                    <p><strong>Description:</strong> Analyze business processes and systems.</p>
+                    <p><strong>Link:</strong> <a href="https://www.bizsolutions.com/jobs/business-analyst" target="_blank">Apply Here</a></p>
+                </div>
+                <div class="post-item">
+                    <h3>Project Manager Job Opportunity</h3>
+                    <p><strong>Company:</strong> ProjectPros</p>
+                    <p><strong>Location:</strong> Houston, TX</p>
+                    <p><strong>Description:</strong> Manage and oversee project development.</p>
+                    <p><strong>Link:</strong> <a href="https://www.projectpros.com/jobs/project-manager" target="_blank">Apply Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('postForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const title = e.target.title.value;
+            const content = e.target.content.value;
+            const link = e.target.link.value;
+            const postList = document.querySelector('.post-list');
+            const postItem = document.createElement('div');
+            postItem.classList.add('post-item');
+            postItem.innerHTML = `
+                <h3>${title}</h3>
+                <p>${content}</p>
+                <p><strong>Link:</strong> <a href="${link}" target="_blank">Apply Here</a></p>
+            `;
+            postList.appendChild(postItem);
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simple Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .nav .button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav .button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-container input, .form-container textarea, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            border: none;
+        }
+
+        .form-container button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="posts.html" class="button">Posts</a>
+            <a href="jobs.html" class="button">Jobs</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="private-internships.html" class="button">Private Internships</a>
+            <a href="government-internships.html" class="button">Government Internships</a>
+            <a href="login.html" class="button">Login</a>
+            <a href="signup.html" class="button">Sign Up</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need further information, please feel free to contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> support@simplejobportal.com</li>
+                <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                <li><strong>Address:</strong> 123 Job Portal Lane, Job City, JC 12345</li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const contactData = {};
+            formData.forEach((value, key) => {
+                contactData[key] = value;
+            });
+
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(contactData)
+            });
+
+            if (response.ok) {
+                alert('Message sent successfully');
+                e.target.reset();
+            } else {
+                alert('Failed to send message');
+            }
+        });
+    </script>
+</body>
+</html>

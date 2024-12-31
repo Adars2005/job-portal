@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Simple Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .nav .button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav .button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-item {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-item h3 {
+            margin: 0 0 10px;
+        }
+
+        .job-item p {
+            margin: 5px 0;
+        }
+
+        .job-item a {
+            color: #FF9933; /* Orange saffron color */
+            text-decoration: none;
+        }
+
+
+        .job-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jobs</h1>
+        <nav class="nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="posts.html" class="button">Posts</a>
+            <a href="jobs.html" class="button">Jobs</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="private-internships.html" class="button">Private Internships</a>
+            <a href="government-internships.html" class="button">Government Internships</a>
+            <a href="login.html" class="button">Login</a>
+            <a href="signup.html" class="button">Sign Up</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Available Jobs</h2>
+            <div class="job-list">
+                <div class="job-item">
+                    <h3>Software Engineer</h3>
+                    <p><strong>Company:</strong> Tech Solutions</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p><strong>Description:</strong> Develop and maintain web applications.</p>
+                    <p><strong>Email:</strong> <a href="mailto:hr@techsolutions.com">hr@techsolutions.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Data Scientist</h3>
+                    <p><strong>Company:</strong> Data Insights</p>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p><strong>Description:</strong> Analyze and interpret complex data sets.</p>
+                    <p><strong>Email:</strong> <a href="mailto:careers@datainsights.com">careers@datainsights.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Product Manager</h3>
+                    <p><strong>Company:</strong> Innovatech</p>
+                    <p><strong>Location:</strong> Austin, TX</p>
+                    <p><strong>Description:</strong> Lead product development teams.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@innovatech.com">jobs@innovatech.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>UX Designer</h3>
+                    <p><strong>Company:</strong> Creative Minds</p>
+                    <p><strong>Location:</strong> Seattle, WA</p>
+                    <p><strong>Description:</strong> Design user-friendly interfaces.</p>
+                    <p><strong>Email:</strong> <a href="mailto:design@creativeminds.com">design@creativeminds.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Marketing Specialist</h3>
+                    <p><strong>Company:</strong> Market Leaders</p>
+                    <p><strong>Location:</strong> Chicago, IL</p>
+                    <p><strong>Description:</strong> Develop and execute marketing strategies.</p>
+                    <p><strong>Email:</strong> <a href="mailto:marketing@marketleaders.com">marketing@marketleaders.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Network Engineer</h3>
+                    <p><strong>Company:</strong> NetSecure</p>
+                    <p><strong>Location:</strong> Denver, CO</p>
+                    <p><strong>Description:</strong> Manage and maintain network infrastructure.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@netsecure.com">jobs@netsecure.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>HR Manager</h3>
+                    <p><strong>Company:</strong> People First</p>
+                    <p><strong>Location:</strong> Miami, FL</p>
+                    <p><strong>Description:</strong> Oversee HR operations and policies.</p>
+                    <p><strong>Email:</strong> <a href="mailto:hr@peoplefirst.com">hr@peoplefirst.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Financial Analyst</h3>
+                    <p><strong>Company:</strong> FinCorp</p>
+                    <p><strong>Location:</strong> Boston, MA</p>
+                    <p><strong>Description:</strong> Analyze financial data and trends.</p>
+                    <p><strong>Email:</strong> <a href="mailto:careers@fincorp.com">careers@fincorp.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Operations Manager</h3>
+                    <p><strong>Company:</strong> Global Logistics</p>
+                    <p><strong>Location:</strong> Los Angeles, CA</p>
+                    <p><strong>Description:</strong> Manage daily operations and logistics.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@globallogistics.com">jobs@globallogistics.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Content Writer</h3>
+                    <p><strong>Company:</strong> WriteWell</p>
+                    <p><strong>Location:</strong> Portland, OR</p>
+                    <p><strong>Description:</strong> Create engaging content for various platforms.</p>
+                    <p><strong>Email:</strong> <a href="mailto:write@writewell.com">write@writewell.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Graphic Designer</h3>
+                    <p><strong>Company:</strong> Design Studio</p>
+                    <p><strong>Location:</strong> Atlanta, GA</p>
+                    <p><strong>Description:</strong> Design visual content for marketing materials.</p>
+                    <p><strong>Email:</strong> <a href="mailto:design@designstudio.com">design@designstudio.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Customer Support Specialist</h3>
+                    <p><strong>Company:</strong> HelpDesk</p>
+                    <p><strong>Location:</strong> Phoenix, AZ</p>
+                    <p><strong>Description:</strong> Provide customer support and assistance.</p>
+                    <p><strong>Email:</strong> <a href="mailto:support@helpdesk.com">support@helpdesk.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>IT Support Technician</h3>
+                    <p><strong>Company:</strong> TechSupport</p>
+                    <p><strong>Location:</strong> Dallas, TX</p>
+                    <p><strong>Description:</strong> Provide technical support and troubleshooting.</p>
+                    <p><strong>Email:</strong> <a href="mailto:support@techsupport.com">support@techsupport.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Business Analyst</h3>
+                    <p><strong>Company:</strong> BizSolutions</p>
+                    <p><strong>Location:</strong> San Diego, CA</p>
+                    <p><strong>Description:</strong> Analyze business processes and systems.</p>
+                    <p><strong>Email:</strong> <a href="mailto:careers@bizsolutions.com">careers@bizsolutions.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Project Manager</h3>
+                    <p><strong>Company:</strong> ProjectPros</p>
+                    <p><strong>Location:</strong> Houston, TX</p>
+                    <p><strong>Description:</strong> Manage and oversee project development.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@projectpros.com">jobs@projectpros.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Sales Manager</h3>
+                    <p><strong>Company:</strong> SalesForce</p>
+                    <p><strong>Location:</strong> Philadelphia, PA</p>
+                    <p><strong>Description:</strong> Lead and manage sales teams.</p>
+                    <p><strong>Email:</strong> <a href="mailto:sales@salesforce.com">sales@salesforce.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Web Developer</h3>
+                    <p><strong>Company:</strong> WebWorks</p>
+                    <p><strong>Location:</strong> San Jose, CA</p>
+                    <p><strong>Description:</strong> Develop and maintain websites.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@webworks.com">jobs@webworks.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Accountant</h3>
+                    <p><strong>Company:</strong> AccountPros</p>
+                    <p><strong>Location:</strong> Charlotte, NC</p>
+                    <p><strong>Description:</strong> Manage financial records and transactions.</p>
+                    <p><strong>Email:</strong> <a href="mailto:careers@accountpros.com">careers@accountpros.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>SEO Specialist</h3>
+                    <p><strong>Company:</strong> SearchMasters</p>
+                    <p><strong>Location:</strong> Orlando, FL</p>
+                    <p><strong>Description:</strong> Optimize website content for search engines.</p>
+                    <p><strong>Email:</strong> <a href="mailto:seo@searchmasters.com">seo@searchmasters.com</a></p>
+                </div>
+                <div class="job-item">
+                    <h3>Mobile App Developer</h3>
+                    <p><strong>Company:</strong> AppCreators</p>
+                    <p><strong>Location:</strong> Raleigh, NC</p>
+                    <p><strong>Description:</strong> Develop and maintain mobile applications.</p>
+                    <p><strong>Email:</strong> <a href="mailto:jobs@appcreators.com">jobs@appcreators.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .nav .button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav .button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+
+        .marquee {
+            background: #FF6600; /* Darker shade of orange saffron */
+            color: red; /* Red color for marquee text */
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .features, .ads {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .feature, .ad {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        .feature h3, .ad h3 {
+            margin-top: 0;
+        }
+
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-item {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-item h2 {
+            margin: 0 0 10px;
+        }
+
+        .job-item p {
+            margin: 5px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px 0;
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background: #FF9933; /* Orange saffron color */
+            color: #ffffff;
+            border: none;
+        }
+
+        .form-container button:hover {
+            background: #FF6600; /* Darker shade of orange saffron */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Job Portal</h1>
+        <nav class="nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="posts.html" class="button">Posts</a>
+            <a href="jobs.html" class="button">Jobs</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="private-internships.html" class="button">Private Internships</a>
+            <a href="government-internships.html" class="button">Government Internships</a>
+            <a href="login.html" class="button">Login</a>
+            <a href="signup.html" class="button">Sign Up</a>
+        </nav>
+        <marquee class="marquee">Last date for applying TCS NQT 2025 is 29th December 2024</marquee>
+    </header>
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <h3>Register now</h3>
+                <p>Discover the latest job opportunities in your field.</p>
+            </div>
+            <div class="feature">
+                <h3>Register now</h3>
+                <p>Connect with top companies and industry leaders.</p>
+            </div>
+        </div>
+        <div class="ads">
+            <div class="ad">
+                <h3>Ad 1</h3>
+                <p>Looking for a job? Check out our latest listings!</p>
+            </div>
+            <div class="ad">
+                <h3>Ad 2</h3>
+                <p>Need to hire? Post your job openings with us!</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="jobForm">
+                <input type="text" name="title" placeholder="Job Title" required>
+                <input type="text" name="description" placeholder="Description" required>
+                <input type="text" name="company" placeholder="Company" required>
+                <input type="text" name="location" placeholder="Location" required>
+                <button type="submit">Create Job</button>
+            </form>
+        </div>
+        <div id="jobList" class="job-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
